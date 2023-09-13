@@ -66,6 +66,9 @@ nav{
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
+/* Tabla para listar los posts */
+
 .tabla {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 4 columnas con igual ancho */
@@ -89,3 +92,45 @@ nav{
 .fila-impar {
     background-color: #f9f9f9;
 }
+
+/* Estilos para el contenedor del formulario */
+.formulario-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Hace que el formulario ocupe toda la altura de la ventana */
+}
+
+/* Estilos para el formulario */
+.formulario {
+    max-width: 500px; /* Ancho máximo del formulario */
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para los campos del formulario */
+.formulario input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para el botón del formulario */
+.formulario button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Cambio de estilo al pasar el mouse sobre el botón  */
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
