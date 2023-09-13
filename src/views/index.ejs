@@ -47,37 +47,18 @@
 
         <!-- Filas de la tabla (ejemplo con 3 filas) -->
         <% allPosts.forEach((post) => { %>
-
-        <div class="celda"><%= post.titulo_post %></div>
-        <div class="celda"><%= post.contenido_post %></div>
-        <div class="celda"><%= post.link_post %></div>
-        <div class="celda"><a href="/posts/update/<%= post.id %>">📝Editar</a></div>
-        <div class="celda"><a href="/posts/delete/<%= post.id %>">❌Eliminar</a></div>
-
+          <div class="celda"><%= post.titulo_post %></div>
+          <div class="celda"><%= post.contenido_post %></div>
+          <div class="celda"><%= post.link_post %></div>
+          <div class="celda"><a href="/posts/update/<%= post.id %>">📝Editar</a></div>
+          <div class="celda"><a href="/posts/delete/<%= post.id %>">❌Eliminar</a></div>
         <% }); %>
-
-        <div class="celda fila-impar">Dato 5</div>
-        <div class="celda fila-impar">Dato 6</div>
-        <div class="celda fila-impar">Dato 7</div>
-        <div class="celda fila-impar">Dato 8</div>
     </div>
-            <li>
-                <p>
-                    <b></b>
-                    <i></i>
-                    <i></i>
-                    
-                    
-                </p>
-            </li>
-  </div>
   </main>
   <footer>
     <div><p>Pagina web Great-Post @copyrigth 2023 EPICA</p></div>
   </footer>
-  
-  
-  
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
