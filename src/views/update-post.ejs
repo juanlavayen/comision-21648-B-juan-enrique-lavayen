@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <a href="/posts">Regresar</a>
+    <h1>Update note</h1>
+
+    <form action="/posts/update" method="post">
+        <input type="text" name="id" value="<%= note.id %>" hidden>
+        <input type="text" name="titulo_post" placeholder="Titulo del post" value="<%= note.titulo_post %>"><br>
+        <textarea name="contenido_post" cols="30" rows="10" placeholder="Contenido del post"><%= note.contenido_post %></textarea><br>
+        <input type="text" name="link_post" placeholder="Link imagen del post" value="<%= note.link_post %>"><br>
+
+        <button>Save</button>
+    </form>
+</body>
+</html>

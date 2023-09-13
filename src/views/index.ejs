@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <a href="/posts/create">Create new note</a>
+    <h1>Sistema de Post :</h1>
+    <ul>
+        <% allPosts.forEach((note) => { %>
+            <li>
+                <p>
+                    <b><%= note.titulo_post %></b>
+                    <i><%= note.contenido_post %></i>
+                    <i><%= note.link_post %></i>
+
+
+                    <a href="/posts/update/<%= note.id %>">📝Editar</a>
+                    <a href="/posts/delete/<%= note.id %>">❌Eliminar</a>
+                </p>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
