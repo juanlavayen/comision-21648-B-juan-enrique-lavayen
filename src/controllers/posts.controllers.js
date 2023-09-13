@@ -35,7 +35,7 @@ const createPost = async (req, res) => {
 const updatePost = async (req, res) => {
   const { id, titulo_post, contenido_post, link_post } = req.body;
 
-  const note = await PostModel.findByPk(id);
+  const post = await PostModel.findByPk(id);
 
   await post.update({ titulo_post, contenido_post, link_post });
 
