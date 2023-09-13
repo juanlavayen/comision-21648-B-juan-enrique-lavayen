@@ -134,3 +134,18 @@ nav{
     background-color: #0056b3;
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+/* Cambia el color del botón cuando se pasa el cursor sobre él */
+.boton:hover {
+    background-color: #0056b3;
+}
+
