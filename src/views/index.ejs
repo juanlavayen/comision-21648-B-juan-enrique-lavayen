@@ -42,30 +42,34 @@
         <div class="cabecera celda">Titulo</div>
         <div class="cabecera celda">Contenido</div>
         <div class="cabecera celda">Link</div>
-        <div class="cabecera celda">Fecha</div>
+        <div class="cabecera celda">Edit</div>
+        <div class="cabecera celda">Del</div>
 
         <!-- Filas de la tabla (ejemplo con 3 filas) -->
-        <div class="celda">Dato 1</div>
-        <div class="celda">Dato 2</div>
-        <div class="celda">Dato 3</div>
-        <div class="celda">Dato 4</div>
+        <% allPosts.forEach((post) => { %>
+
+        <div class="celda"><%= post.titulo_post %></div>
+        <div class="celda"><%= post.contenido_post %></div>
+        <div class="celda"><%= post.link_post %></div>
+        <div class="celda"><a href="/posts/update/<%= post.id %>">📝Editar</a></div>
+        <div class="celda"><a href="/posts/delete/<%= post.id %>">❌Eliminar</a></div>
+
+        <% }); %>
 
         <div class="celda fila-impar">Dato 5</div>
         <div class="celda fila-impar">Dato 6</div>
         <div class="celda fila-impar">Dato 7</div>
         <div class="celda fila-impar">Dato 8</div>
     </div>
-        <% allPosts.forEach((post) => { %>
             <li>
                 <p>
-                    <b><%= post.titulo_post %></b>
-                    <i><%= post.contenido_post %></i>
-                    <i><%= post.link_post %></i>
-                    <a href="/posts/update/<%= post.id %>">📝Editar</a>
-                    <a href="/posts/delete/<%= post.id %>">❌Eliminar</a>
+                    <b></b>
+                    <i></i>
+                    <i></i>
+                    
+                    
                 </p>
             </li>
-        <% }); %>
   </div>
   </main>
   <footer>

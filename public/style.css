@@ -68,7 +68,7 @@ nav{
 }
 .tabla {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas con igual ancho */
+    grid-template-columns: repeat(5, 1fr); /* 4 columnas con igual ancho */
     border: 1px solid #ccc;
     width: 100%;
 }
