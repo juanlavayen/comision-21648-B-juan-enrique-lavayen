@@ -71,21 +71,28 @@ nav{
 
 .tabla {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 4 columnas con igual ancho */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas con igual ancho */
     border: 1px solid #ccc;
     width: 100%;
+    border-radius: 5px;
+
 }
 
 /* Estilos para las celdas de la tabla */
 .celda {
     padding: 10px;
     border: 1px solid #ccc;
+    font-size: 15px;
+    font-family: tahoma;
 }
 
 /* Estilos para la cabecera de la tabla */
 .cabecera {
     font-weight: bold;
-    background-color: #f2f2f2;
+    background-color:  #0056b3;
+    color: #ccc;
+    font-family: 'Lucida Sans';
+    font-size: medium;
 }
 
 /* Estilos para las filas impares */

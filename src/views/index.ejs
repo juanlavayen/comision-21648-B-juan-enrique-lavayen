@@ -45,11 +45,11 @@
         <div class="cabecera celda">Edit</div>
         <div class="cabecera celda">Del</div>
 
-        <!-- Filas de la tabla (ejemplo con 3 filas) -->
+        <!-- Filas de la tabla -->
         <% allPosts.forEach((post) => { %>
           <div class="celda"><%= post.titulo_post %></div>
           <div class="celda"><%= post.contenido_post %></div>
-          <div class="celda"><%= post.link_post %></div>
+          <div class="celda"><a href="<%= post.link_post %>"><%= post.link_post %></a></div>
           <div class="celda"><a href="/posts/update/<%= post.id %>">📝Editar</a></div>
           <div class="celda"><a href="/posts/delete/<%= post.id %>">❌Eliminar</a></div>
         <% }); %>

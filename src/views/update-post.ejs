@@ -9,7 +9,7 @@
 <body>
     <a href="/posts">Regresar</a>
     <h1>Actualizar post</h1>
-
+<!--    
     <form action="/posts/update" method="post">
         <input type="text" name="id" value="<%= post.id %>" hidden>
         <input type="text" name="titulo_post" placeholder="Titulo del post" value="<%= post.titulo_post %>"><br>
@@ -17,5 +17,27 @@
         <input type="text" name="link_post" placeholder="Link imagen del post" value="<%= post.link_post %>"><br>
         <button>Confirmar</button>
     </form>
+-->
+
+    <h1>Editar Post</h1>
+    <div class="formulario-container">
+        <form class="formulario" action="/posts/update" method="post">
+            <h2>Editar Post</h2>
+            <input type="text" name="id" value="<%= post.id %>" hidden>
+            <label for="titulo_post">Título del Post:</label>
+            <input type="text" id="titulo_post" name="titulo_post" value="<%= post.titulo_post %>">
+
+            <label for="contenido_post">Contenido del Post:</label>
+            <textarea id="contenido_post" name="contenido_post" cols="30" rows="10" ><%= post.contenido_post %></textarea>
+
+            <label for="link_post">Link de la Imagen:</label>
+            <input type="text" id="link_post" name="link_post" value="<%= post.link_post %>">
+
+            <button type="submit">Crear Post</button>
+            <a class="boton" href="/posts">Cancelar</a>
+        </form>
+    </div>
+
 </body>
 </html>
+
