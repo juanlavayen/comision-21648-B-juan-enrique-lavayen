@@ -55,7 +55,7 @@
                 <div class="celda"><%= post.titulo_post %></div>
                 <div class="celda"><%= post.contenido_post %></div>
                 <div class="celda"><a href="<%= post.link_post %>"><%= post.link_post %></a></div>
-                <div class="celda"><a href="<%= post.link_post %>"><%= post.link_post %></a></div>
+                <div class="celda"><a href="<%= post.link_post %>"><%= post.createdAt %></a></div>
                 <div class="celda"><a href="/posts/update/<%= post.id %>">📝</a><a href="/posts/delete/<%= post.id %>">❌</a></div>
             <% }); %>
         </div>
