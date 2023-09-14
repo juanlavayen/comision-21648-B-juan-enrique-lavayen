@@ -47,23 +47,23 @@
             <div class="cabecera celda">Titulo</div>
             <div class="cabecera celda">Contenido</div>
             <div class="cabecera celda">Link</div>
-            <div class="cabecera celda">Edit</div>
-            <div class="cabecera celda">Del</div>
+            <div class="cabecera celda">Fecha</div>
+            <div class="cabecera celda">Accion</div>
 
             <!-- Filas de la tabla -->
             <% allPosts.forEach((post) => { %>
                 <div class="celda"><%= post.titulo_post %></div>
                 <div class="celda"><%= post.contenido_post %></div>
                 <div class="celda"><a href="<%= post.link_post %>"><%= post.link_post %></a></div>
-                <div class="celda"><a href="/posts/update/<%= post.id %>">📝Editar</a></div>
-                <div class="celda"><a href="/posts/delete/<%= post.id %>">❌Eliminar</a></div>
+                <div class="celda"><a href="<%= post.link_post %>"><%= post.link_post %></a></div>
+                <div class="celda"><a href="/posts/update/<%= post.id %>">📝</a><a href="/posts/delete/<%= post.id %>">❌</a></div>
             <% }); %>
         </div>
     </main>
     
     <!-- Pie de página -->
     <footer>
-        <div><p>Pagina web Great-Post @copyrigth 2023 EPICA</p></div>
+        <div><p>Pagina web Great-Post @copyrigth Juan Lavayen 2023 EPICA</p></div>
     </footer>
     
     <!-- Scripts de Bootstrap -->
