@@ -6,3 +6,5 @@ Listado de  post .
 Carga de post.
 Edicion de  Post.
 Eliminacion de  Post.
+
+Css,Bootstrap,Node.js,Express,Sequelize,
